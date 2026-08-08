@@ -1,0 +1,1 @@
+import{favs,nav}from"./app.js";nav();let a=favs();document.querySelector("#f").innerHTML=a.map(x=>`<article class=card><a href="anime.html?id=${encodeURIComponent(x.id)}"><img src="${x.image||"assets/placeholder.svg"}"><b>${x.title}</b></a></article>`).join("")||"<div class=empty>No favorites.</div>"
